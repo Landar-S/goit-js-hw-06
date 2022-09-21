@@ -30,9 +30,9 @@ function createBoxes(amount) {
   }
 
   boxesEl.append(...newBoxes);
-  inputEl = 0;
 }
 
 function destroyBoxes() {
   boxesEl.innerHTML = "";
+  inputEl.value = "";
 }

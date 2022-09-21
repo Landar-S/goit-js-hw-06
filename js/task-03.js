@@ -21,4 +21,10 @@ const newImages = images
   )
   .join("");
 
+// const newImages = images.reduce(
+//   (acc, item) =>
+//     (acc += `<li class="gallery__item"><img class="gallery__image" src="${item.url}" alt="${item.alt}"/></li>`),
+//   ""
+// );
+
 galleryList.insertAdjacentHTML("beforeend", newImages);
